@@ -1,0 +1,82 @@
+//== BootStrap Navbar
+//
+//
+
+a.navbar-brand {
+	border: none;
+	color: #fff;
+
+	&:hover {
+		color: @link-color-hover;
+	}
+}
+
+.navbar {
+	text-transform: uppercase;
+
+	@media (min-width: @screen-sm) {
+		font-family: 'Montserrat', sans-serif;
+		letter-spacing: 1px;
+		padding: 1.0em 0;
+		transition: background 0.5s ease-in-out;
+
+		& li a {
+			background: none;
+			border: none;
+			color: rgba(255, 255, 255, 0.5);
+			cursor: default;
+
+			&:hover, &:active, &:focus {
+				background: none;
+			}
+
+			& span:focus,
+			& span:hover {
+			    color: #fff;
+			    border-bottom: 2px solid @link-color-hover;
+			    cursor: pointer;
+			}
+		}
+
+		& li.active a {
+		    & span, & span:hover {
+				color: @link-color-hover;
+				border: none;
+		    }
+		}
+	}
+}
+
+//This is for the mobile menu - it needs to
+//have its background set to a color so that
+//text items can be read
+.navbar-collapse {
+	@media (max-width: @screen-sm) {
+		background-color: rgba(255, 255, 255, 0.8);
+		color: #000;
+		font-weight: 700;
+	}
+}
+
+//Workings in conjunction with navbar.js - the
+//top navbar that results when someone scrolls
+//down
+.top-navbar-collapse {
+	background-color: rgba(230, 230, 230, 0.9);
+	transition: all 0.5s ease-in-out;
+
+    & a.navbar-brand {
+    	color: #000;
+    	&:hover {color: @link-color-hover;}
+    }
+
+    & li a {
+    	background: none;
+    	color: #000;
+		& span:focus,
+		& span:hover {
+			color: @link-color-hover;
+			border: none;
+		}
+    }
+}

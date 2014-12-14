@@ -1,0 +1,7 @@
+{
+  "name": "doctrina",
+  "dependencies": {
+    "bootstrap": "3.3.0",
+    "jquery.easing": "1.3.1"
+  }
+}

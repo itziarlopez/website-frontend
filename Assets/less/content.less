@@ -1,0 +1,27 @@
+//==Content
+//
+//
+
+.content {
+	padding-top: 4em;
+	padding-bottom: 3em;
+
+
+	@media (min-width: @screen-sm) {
+		font-size: 1.25em;
+		line-height: 2.0em;
+	}
+	
+	h2 {
+		color: #333332;
+	}
+
+	p {
+		@media (max-width: @screen-sm) {
+			font-size: 1.3em;
+			line-height: 1.75em;
+			font-weight: 400;
+		}
+		text-align: justify;
+	}
+}

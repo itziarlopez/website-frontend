@@ -1,0 +1,35 @@
+//
+//Custom CSS For Doctrina - By Barry Steyn
+//-----------------------------------------
+
+//Import URLS
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,300);
+@import url(http://fonts.googleapis.com/css?family=Montserrat);
+
+//== Variables
+//
+//## Variables used within the styles
+
+@import (reference) "Assets/bower_components/bootstrap/less/variables.less";
+@text-color: #4f535f;
+@link-color-hover: #5CC8F9;
+
+//Styles that are shared by many common elements
+@import "common.less";
+
+//BootStrap Addition
+@import "bootstrap-col-height.less";
+
+//Customized CSS
+@import "intro.less";
+@import "brand-heading.less";
+@import "headers.less";
+@import "content.less";
+@import "social-connect.less";
+
+//@import "font-awesome.less"; //Consider removing
+
+// Bootstrap Component Customization
+@import "blockquote.less";
+@import "button-intro.less";
+@import "navbar.less";

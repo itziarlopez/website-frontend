@@ -1,0 +1,23 @@
+//== Headers
+//
+//
+
+.header {
+	height: 12em;
+	width: 100%;
+
+	&-children:extend(.header) {
+		background: url(../img/children-header.jpg) rgba(255,255,255,0) center no-repeat;
+		background-size: contain;
+	}
+
+	&-adults:extend(.header) {
+		background: url(../img/adults-header.jpg) no-repeat;
+		background-size: cover;
+	}
+
+	&-corporates:extend(.header) {
+		background: url(../img/corporates-header.jpg) rgba(255,255,255,0) center no-repeat;
+		background-size: contain;
+	}
+}

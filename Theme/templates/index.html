@@ -1,0 +1,247 @@
+{% extends "base.html" %}
+
+{# Navbar #}
+{% block navbar_contents %}
+	<li class="page-scroll">
+	    <a href="#about"><span>About</span></a>
+	</li>
+    <li class="page-scroll">
+        <a href="#corporate"><span>Corporations</span></a>
+    </li>
+    <li class="page-scroll">
+        <a href="#adults"><span>Adults</span></a>
+    </li>
+    <li class="page-scroll">
+        <a href="#children"><span>Children</span></a>
+    </li>
+	{{ super() }}
+{% endblock %}
+
+{# Sections #}
+{% block sections %}
+    <section id="intro" class="intro text-center vertical-align">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <div class="brand-heading">
+                        <h1 class="brand-heading">Learn Spanish In Vancouver</h1>
+                        <p>Private Spanish tuition to individuals and groups</p>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3 col-md-offset-2 col-xs-4 phone-portrait-display page-scroll">
+                            <a href="#corporate" class="btn btn-block btn-intro">Corporations</a>
+                        </div>
+                        <div class="col-md-3 col-xs-4 phone-portrait-display page-scroll">
+                            <a href="#adults" class="btn btn-block btn-intro">Adults</a>
+                        </div>
+                        <div class="col-md-3 col-xs-4 phone-portrait-display page-scroll">
+                            <a href="#children" class="btn btn-block btn-intro">Children</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="text-center">
+        <div class="container-fluid content">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>About Me</h2>
+                    <div class="divider-grey"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <blockquote class="blockquote-reverse">
+                        <p>Approximately 470 million people speak Spanish as a native language, making it second only to Mandarin in terms of its number of native speakers worldwide</p>
+                        <footer><a href="http://en.wikipedia.org/wiki/Spanish_language" target="_blank">Spanish Language Wikipedia Article</a></footer>
+                    </blockquote>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <div class="container-fluid container-md-height">
+                        <div class="row row-md-height">
+                            <div class="col-md-3 col-md-height col-middle">
+                                <img src="theme/img/me.jpg" class="img-responsive img-circle" style="margin-left:auto; margin-right:auto;"></img>
+                            </div>
+                            <div class="col-md-9 col-md-height col-middle text-left" style="padding-top: 1em;">
+                                <p>
+                                    Hi, I'm Itziar and I am passionate about Spanish. I come from the city of <a href="http://en.wikipedia.org/wiki/Pamplona" target="_blank">Pamplona</a> in Spain where I gained experience in teaching both adults and children. I now live in beautiful Vancouver where I have been teaching Spanish to children in kindergarten all the way up to adults who have retired.
+                                </p>
+                                <p>
+                                    I will help and motivate you to master Spanish! I have been doing this for years and along the way, I have collected the best materials to aide in the Spanish learning process. From conducting business in Spanish to teaching little children, I am excited to be your personal teacher.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="corporate" class="text-center">
+        <div class="container-fluid content">
+            <div class="header-corporates"></div>
+            <h2>Corporations</h2>
+            <div class="divider-grey"></div>
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <p>
+                        Each company is unique and therefore I customise Spanish lessons for corporates according to the required business situation. I am aware of the time constraints faced by employees, therefore I put emphasis in maximizing the learning potential in the the allotted time. I accomplish this by conducting lessons on-premisis and by creating a dynamic learning environment that is applicable and fun.
+                    </p>
+                    <p>
+                        The ultimate goal of learning Spanish in a corporate setting is to be able to better conduct business. These lessons will improve an employees confidence in conducting business in Spanish.
+                    </p>
+                </div>
+            </div>
+            <div class="divider-grey"></div>
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2 page-scroll">
+                    <p style="text-align: center">For more information, please make <a href="#contact">contact</a>.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="adults" class="text-center">
+        <div class="header-adults"></div>
+        <div class="container-fluid content">
+            <h2>Adults</h2>
+            <div class="divider-grey"></div>
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <p>
+                        Adult classes are <em>customized</em> according to an individual's need. Beginner, intermediate and advanced levels are catered for, with students being encouraged to sit for the <a href="http://en.wikipedia.org/wiki/DELE_%28Spanish_test%29" target="_blank">DELE exam</a>.
+                    </p>
+                    <p>
+                        I also teach special classes for those who want to learn Spanish for their travels. The emphasis is on combining grammar with speaking skills in order to develop basic conversational skills needed for travel.
+                    </p>
+                    <p>
+                        Classes can be held in private, or in groups 
+                    </p>
+                </div>
+            </div>
+            <div class="divider-grey"></div>
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2 page-scroll">
+                    <p style="text-align: center">For more information, please make <a href="#contact">contact</a>.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="children" class="text-center">
+        <div class="container-fluid xs-height content">
+            <div class="header-children"></div>
+            <h2>Children</h2>
+            <div class="divider-grey"></div>
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <p>
+                        Learning a new language at a young age not only improves confidence, it also <a href="http://www.actfl.org/advocacy/discover-languages/advocacy/discover-languages/what-the-research-shows/studies-supporting" target="_blank">leads to increased academic performance</a>. I teach children in the following age groups:
+                    </p>
+
+                    <div class="row row-md-height">
+                        <div class="col-xs-12 col-md-4 col-md-height">
+                            <h3>Ages 5-8</h3>
+                            <p>An introduction to basic Spanish adapted to young children. Basic vocabulary and expressions are taught.
+                        </div>
+                        <div class="col-xs-12 col-md-4 col-md-height">
+                            <h3>Ages 8-12</h3>
+                            <p>Reading and writing Spanish is introduced. In addition, vocabulary and expressions are taught.
+                        </div>
+                        <div class="col-xs-12 col-md-4 col-md-height">
+                            <h3>Ages 12-17</h3>
+                            <p>Thematically designed classes that teach speaking, listening, writing and reading. Students are encouraged to take the A1 level <a href="http://en.wikipedia.org/wiki/DELE_%28Spanish_test%29" target="_blank">DELE exam</a> for when ready.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="divider-grey"></div>
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2 page-scroll">
+                    <p style="text-align: center">For more information, please make <a href="#contact">contact</a>.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="text-center">
+        <div class="container content">
+            <h2>Contact</h2>
+            <div class="divider-grey"></div>
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-phone fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </div>
+                        <div class="col-md-12">
+                            <p style="text-align: center">+1.778.834.4284</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-inbox fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </div>
+                        <div class="col-md-12">
+                            <p style="text-align: center"><span id="mail">itziar [d] lopez [a] spanishtuition [d] ca</span><p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h3>Social Connect</h3>
+            <div class="row">
+                <div class="col-sm-10 col-sm-offset-1">
+
+                    <div class="row social-connect">
+                        <div class="col-sm-6">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <a href="https://ca.linkedin.com/pub/itziar-l%C3%B3pez-noble/23/277/9bb" target="_blank" style="border: none">
+                                        <span class="hidden-xs">LinkedIn</span>
+                                        <span class="fa-stack fa-lg">
+                                            <i class="fa fa-circle fa-stack-2x"></i>
+                                            <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                                        </span>
+                                    </a>    
+                                </div>
+                                <div class="visible-xs">
+                                    <p style="text-align: center"><a href="https://ca.linkedin.com/pub/itziar-l%C3%B3pez-noble/23/277/9bb" target="_blank">LinkedIn</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                    <span class="hidden-xs">Facebook</span>
+                                </div>
+                                <div class="visible-xs">
+                                    <p style="text-align: center">Facebook</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}
+
+{% block javascript %}
+    <script src="theme/js/spamhide.js"></script>
+{% endblock %}
