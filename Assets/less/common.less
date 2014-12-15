@@ -39,6 +39,17 @@ a {
 	}
 }
 
+//Make any DOM node a link
+.link:extend(a) {
+	&:hover {
+		&:extend(a:hover);
+	}
+	
+	&:hover, &:active, &:focus {
+		outline: none;
+	}
+}
+
 h2 {
 	@media (min-width: @screen-sm) {
 		font-size: 3em;
