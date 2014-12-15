@@ -21,7 +21,7 @@ module.exports = function(grunt) {
 
         //Deletes folders and files
         clean: {
-            all: ['<%= globalConfig.output %>', '<%= globalConfig.bower_components %>', 'node_modules'],
+            all: ['<%= globalConfig.output %>', '<%= globalConfig.bower_components %>', 'node_modules', '<%= globalConfig.temp %>'],
             output: ['<%= globalConfig.output %>'],
             temp: ['<%= globalConfig.temp %>']
         },
