@@ -70,8 +70,7 @@ h2 {
 }
 
 #about, #adults, #corporate, #children, #contact {
-	@media (min-width: @screen-lg-min) and (min-height: 700px) {
-		height: 100%;
+	@media (min-height: 700px) {
 		.vertical-align();
 	}
 	
@@ -81,16 +80,6 @@ h2 {
 
 //== Hacks
 //
-//To vertically align content - see http://stackoverflow.com/questions/22196587/how-to-center-align-vertically-the-container-in-bootstrap
-.vertical-align {
-	min-height: 100%; /* Fallback for browsers that do not use vh units */
-	min-height: 100vh;
-
-	display: flex;
-	align-items: center;
-	flex-wrap: wrap;
-}
-
 //The easiest way to
 //make twitter bootstrap render the 
 //intro correctly for phone in portrait

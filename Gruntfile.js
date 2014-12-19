@@ -37,7 +37,8 @@ module.exports = function(grunt) {
             images: {
                 files: [ //copy png and jpeg files only (i.e leave the gimp xcf files alone)
                     {expand: true, cwd: '<%= globalConfig.assets %>', src: ['img/*.jpg'], dest: '<%= globalConfig.output %>/static/', filter: 'isFile'},
-                    {expand: true, cwd: '<%= globalConfig.assets %>', src: ['img/*.png'], dest: '<%= globalConfig.output %>/static/', filter: 'isFile'}
+                    {expand: true, cwd: '<%= globalConfig.assets %>', src: ['img/*.png'], dest: '<%= globalConfig.output %>/static/', filter: 'isFile'},
+                    {expand: true, cwd: '<%= globalConfig.assets %>', src: ['img/*.ico'], dest: '<%= globalConfig.output %>/static/', filter: 'isFile'}
                 ]
             },
 
