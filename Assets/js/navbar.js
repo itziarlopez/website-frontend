@@ -2,7 +2,7 @@ $(function() {
     
     //jQuery to collapse the navbar on scroll
     $(window).scroll(function() {
-        if ($(".navbar").offset().top > 50) {
+        if ($(".navbar").offset().top > 0) {
             $(".navbar-fixed-top").addClass("top-navbar-collapse");
         } else {
             $(".navbar-fixed-top").removeClass("top-navbar-collapse");
@@ -20,6 +20,7 @@ $(function() {
 
     //JavaScript to make navbar auto-collapse on mobile
     $('.nav a').on('click', function() {
-        $(".navbar-toggle").click();
+        if ($('.navbar-toggle').is(':visible'))
+            $('.navbar-toggle').click();
     });
 })

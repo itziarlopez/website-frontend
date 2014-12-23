@@ -69,7 +69,7 @@ h2 {
 	padding-bottom: 1em;
 }
 
-#about, #adults, #corporate, #children, #contact {
+#about, #adults, #corporate, #children, #contact, #teens {
 	@media (min-height: 700px) {
 		.vertical-align();
 	}
@@ -86,11 +86,20 @@ h2 {
 //and in landscape. Note: The breakpoint
 //applies to a phone in portrait
 .phone-portrait-display {
-	@media (max-width: 480px) {
-		display: block;
-		float: none;
+	@media (max-width: 360px) and (max-height: 640px), (max-width: 604px) and (max-height: 966px) {
 		margin-left: 25%;
 		width: 50%;
+	}
+
+	//Iphone 4
+	@media (max-width: 320px) and (max-height: 480px), (max-width: 480px) and (max-height: 320px) {
+		display: block;
+		float: left;
+		width: 50%;
+		margin-left: 0px;
+		a {
+			line-height: 2.5em;
+		}
 	}
 }
 

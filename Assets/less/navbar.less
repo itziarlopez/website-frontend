@@ -9,6 +9,16 @@ a.navbar-brand {
 	&:hover {
 		color: @link-color-hover;
 	}
+
+	span:before {
+		@media (min-width: 1000px) {
+			content: "Spanish Tuition";
+		}
+
+		@media (min-width: 1200px) {
+			content: "Spanish Tuition In Vancouver";
+		}
+	}
 }
 
 .navbar {
