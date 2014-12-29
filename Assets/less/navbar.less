@@ -11,7 +11,7 @@ a.navbar-brand {
 	}
 
 	span:before {
-		@media (min-width: 1000px) {
+		@media (max-width: (@grid-float-breakpoint - 1px)), (min-width: 1000px) {
 			content: "Spanish Tuition";
 		}
 
@@ -61,7 +61,7 @@ a.navbar-brand {
 //have its background set to a color so that
 //text items can be read
 .navbar-collapse {
-	@media (max-width: @screen-sm) {
+	@media (max-width: (@grid-float-breakpoint - 1px)) {
 		background-color: rgba(255, 255, 255, 0.8);
 		color: #000;
 		font-weight: 700;

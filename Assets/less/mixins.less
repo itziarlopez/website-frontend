@@ -4,7 +4,12 @@
 
 //To vertically align content - see http://stackoverflow.com/questions/22196587/how-to-center-align-vertically-the-container-in-bootstrap
 .vertical-align() {
-	height: 100%;
+	//IE11 hack, since min-height is broken in flex box
+	//This relies upon Conditional IE comments set in base.html (see http://www.paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/)
+	.ie11 & {
+		height: 100%;
+	}
+	min-height: 100%;
 	display: flex;
 	align-items: center;
 	flex-wrap: wrap;
