@@ -6,9 +6,12 @@
 .vertical-align() {
 	//IE11 hack, since min-height is broken in flex box
 	//This relies upon Conditional IE comments set in base.html (see http://www.paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/)
-	.ie11 & {
-		height: 100%;
-	}
+    @media all and (-ms-high-contrast:none) {
+		*::-ms-backdrop, & { 
+			height: 100%; 
+		}
+    }
+
 	min-height: 100%;
 	display: flex;
 	align-items: center;
