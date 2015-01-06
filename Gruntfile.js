@@ -30,7 +30,7 @@ module.exports = function(grunt) {
         copy: {
             theme: { //Copy pelican theme files
                 files: [
-                    {expand: true, cwd: 'Theme/', src: ['**'], dest: '<%= globalConfig.output %>'},
+                    {expand: true, cwd: 'Templates/', src: ['**'], dest: '<%= globalConfig.output %>/templates'},
                 ],
             },
 
