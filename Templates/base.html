@@ -12,8 +12,8 @@
         <title>{% block title %}{{ SITENAME }}{% endblock %}</title>
 
         <!-- CSS -->
-        <link href="theme/css/base.css" rel="stylesheet">
-        <link href="theme/css/main.css" rel="stylesheet">
+        <link href="{{ SITEURL }}/theme/css/base.css" rel="stylesheet">
+        <link href="{{ SITEURL }}/theme/css/main.css" rel="stylesheet">
         <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"> 
     </head>
 
@@ -52,7 +52,7 @@
 
         <!-- JavaScript -->
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-        <script src="theme/js/main.js"></script>
+        <script src="{{ SITEURL }}/theme/js/main.js"></script>
         {% block javascript %}{% endblock %}
     </body>
 

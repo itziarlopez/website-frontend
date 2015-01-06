@@ -101,11 +101,13 @@ module.exports = function(grunt) {
             }
         },
 
-        //Concat - concats files (for production)
+        //Concat
         concat: {
             js: {
                 src: [  
-                    "<%= globalConfig.bower_components %>/bootstrap/dist/js/bootstrap.js",
+                    "<%= globalConfig.bower_components %>/bootstrap/js/transition.js",
+                    "<%= globalConfig.bower_components %>/bootstrap/js/collapse.js",
+                    "<%= globalConfig.bower_components %>/bootstrap/js/scrollspy.js",
                     "<%= globalConfig.bower_components %>/jquery.easing/js/jquery.easing.js",
                     "<%= globalConfig.assets %>/js/navbar.js",
                     "<%= globalConfig.assets %>/js/spamhide.js"
